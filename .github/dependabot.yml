@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: SpecFlow
+    versions:
+    - 3.6.23
+    - 3.7.13
+  - dependency-name: SpecRun.Runner
+    versions:
+    - 3.6.2
+  - dependency-name: SpecRun.SpecFlow
+    versions:
+    - 3.6.2
+  - dependency-name: SimpleInjector
+    versions:
+    - 5.2.1
